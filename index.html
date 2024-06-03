@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!----Font awesome cdn  font icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-a"></i>
+            <div class="logo-text">Ali Raza</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+
+              <li><a href="#contactme">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div id="Home" class="container">
+          <div class="hero-pic">
+            <img src="images/profile.jpg" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm <span id="element"></span></h5>
+
+            <h1>Ali Raza</h1>
+            <p>
+              As a recent Computer Science graduate and passionate Front-End Web
+              Developer, I specialize in creating visually appealing and
+              user-friendly web interfaces. With a strong foundation in HTML,
+              CSS, JavaScript, and Bootstrap, I am dedicated to crafting
+              responsive and dynamic websites that enhance user experiences.
+            </p>
+
+            <div class="btn-group">
+              <a href="images/Resume1.png" download="Resume.jpg">
+                <button id="downloadBtn" class="animated-button">
+                  <span>Download CV</span>
+                  <span></span>
+                </button>
+              </a>
+              <a href="#contactme" class="btn">Contact</a>
+            </div>
+
+            <div class="social">
+              <a href="https://www.facebook.com/profile.php?id=100024203437648"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ali-raza-9970412bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/alinotraza/?hl=en"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Portfolio" id="portfolio">
+      <div class="PortfolioContent">
+        <h1>Work Experience</h1>
+        <div class="workContainer">
+          <!--    <div class="Card">
+            <div class="Image"><img src="images/work1.PNG" alt="" /></div>
+            <h2>NIKE Project</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repudiandae, dolorem.
+            </p>
+          </div>-->
+          <div class="Card">
+            <div class="Image">
+              <img src="images/work1.PNG" alt="" />
+            </div>
+            <h2>NIKE Project</h2>
+            <h5>
+              This is my FrontEnd Web Project which consist of one landing page
+              with Multiple Sections.
+            </h5>
+
+            <a
+              href="https://razaishere.github.io/Nike-Landing-Page/#home"
+              target="_blank"
+            >
+              <button class="animated-button">Visit Site</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contactme" class="ContactMe">
+      <div class="left">
+        <h1>Contact Me</h1>
+        <h4><i class="fa-solid fa-envelope"></i> info678797@gmail.com</h4>
+        <h4><i class="fa-brands fa-whatsapp"></i> 03285113081</h4>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100024203437648"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ali-raza-9970412bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/alinotraza/?hl=en"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <a href="images/Resume1.png" download="Resume.jpg"
+          ><button id="downloadBtn" class="animated-button">
+            Download CV
+          </button></a
+        >
+      </div>
+      <div class="Right">
+        <div class="form-card1">
+          <div class="form-card2">
+            <form class="form">
+              <p class="form-heading" style="color: white">Get In Touch</p>
+
+              <div class="form-field">
+                <input
+                  required=""
+                  placeholder="Name"
+                  class="input-field"
+                  type="text"
+                />
+              </div>
+
+              <div class="form-field">
+                <input
+                  required=""
+                  placeholder="Email"
+                  class="input-field"
+                  type="email"
+                />
+              </div>
+
+              <div class="form-field">
+                <input
+                  required=""
+                  placeholder="Subject"
+                  class="input-field"
+                  type="text"
+                />
+              </div>
+
+              <div class="form-field">
+                <textarea
+                  required=""
+                  placeholder="Message"
+                  cols="30"
+                  rows="3"
+                  class="input-field"
+                ></textarea>
+              </div>
+
+              <button class="sendMessage-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <footer>
+      <div class="footer-container">
+        <h1>
+          <i id="copy" class="fa-regular fa-copyright"></i>Copyright
+          <i id="copyy" class="fa-regular fa-copyright"></i> Ali Raza
+        </h1>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Front-End Web Developer."],
+        typeSpeed: 70,
+        backSpeed: 80,
+        loop: true,
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/12a062be51.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
